@@ -225,9 +225,26 @@ Capacitar os alunos a entender e aplicar soluções baseadas em computação em 
 
 **Exercício 5 - Projeto Final: Planejamento de Arquitetura em Nuvem**
 
-> **Objetivo:** Planejar uma arquitetura completa de nuvem para um cenário fictício.
+> **Objetivo:** Planejar uma arquitetura completa de nuvem para um cenário fictício, respeitando um orçamento definido.
 >
-> **Passo a passo:**
+> ---
+>
+> ### Orçamento
+>
+> Cada cenário tem um orçamento mensal máximo definido. Sua arquitetura **deve caber dentro desse limite**. Justifique as escolhas de acordo com as restrições financeiras. Esse é um dos maiores desafios do trabalho real em cloud.
+>
+> | Cenário | Orçamento mensal máximo |
+> |---|---|
+> | **A** — Loja virtual com picos na Black Friday | R$ 3.000 / mês ($600 US) |
+> | **B** — App de saúde com dados sensíveis | R$ 2.000 / mês ($400 US) |
+> | **C** — Startup de IA com recomendação de produtos | R$ 5.000 / mês ($1.000 US) |
+>
+> > **Observação:** O orçamento se refere ao custo em operação normal. Picos pontuais (ex: Black Friday no Cenário A) podem ultrapassar temporariamente o limite, desde que você explique no documento como isso ocorre e como seria controlado.
+>
+> ---
+>
+> ### Passo a passo
+>
 > 1. Escolha **um** dos cenários abaixo (ou fale comigo sobre algum outro):
 >    - **Cenário A:** Uma loja virtual que espera picos de acesso na Black Friday
 >    - **Cenário B:** Um aplicativo de saúde que armazena dados sensíveis de pacientes
@@ -238,12 +255,13 @@ Capacitar os alunos a entender e aplicar soluções baseadas em computação em 
 >    - Como a segurança será garantida (IAM, VPC, criptografia?)
 >    - Como o sistema escala com aumento de demanda
 >    - Estratégia de backup / recuperação de desastres
-> 3. Use a [Calculadora de Preços da AWS](https://calculator.aws/) para estimar o **custo mensal** da sua solução
+> 3. Use a [Calculadora de Preços da AWS](https://calculator.aws/) para estimar o **custo mensal** da sua solução e confirmar que está dentro do orçamento do cenário escolhido
 > 4. Escreva um documento curto (1~2 páginas) explicando:
 >    - Por que escolheu cada serviço
+>    - Como a arquitetura se encaixa no orçamento (mostre os principais itens de custo)
 >    - Quais os riscos da sua arquitetura
 >    - O que faria diferente com orçamento ilimitado
-> 5. **Entrega:** Diagrama (imagem ou link do Draw.io) + documento + estimativa de custos
+> 5. **Entrega:** Diagrama (imagem ou link do Draw.io) + documento + print da estimativa na Calculadora AWS
 
 ---
 
