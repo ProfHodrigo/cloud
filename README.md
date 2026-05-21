@@ -86,27 +86,42 @@ Capacitar os alunos a entender e aplicar soluções baseadas em computação em 
 
 **Exercício 2 - Simulando Escalabilidade e Alta Disponibilidade**
 
-> **Objetivo:** Entender na prática como funciona a escalabilidade e o balanceamento de carga.
+> **Objetivo:** Entender na prática como funciona a escalabilidade horizontal, observar o uso de recursos por container e ver o sistema escalar sem downtime.
+>
+> **Pré-requisito:** Docker Desktop instalado e rodando: [docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/)
 >
 > **Passo a passo:**
-> 1. Instale o Docker Desktop na sua máquina: [docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/)
-> 2. Crie um arquivo chamado `docker-compose.yml` com o conteúdo abaixo - ele sobe um servidor web (Nginx) com **3 réplicas** e um balanceador de carga simples:
+> 1. Crie um arquivo chamado `docker-compose.yml` com o conteúdo abaixo.
+>    O campo `ports` é obrigatório para conseguir enviar requisições aos containers:
 >    ```yaml
 >    version: '3'
 >    services:
 >      web:
 >        image: nginx:alpine
->        deploy:
->          replicas: 3
+>        ports:
+>          - "80"  # porta aleatória por container
 >    ```
-> 3. Execute no terminal: `docker compose up -d --scale web=3`
-> 4. Verifique os containers rodando: `docker compose ps`
-> 5. Agora simule aumento de demanda subindo para 5 réplicas: `docker compose up -d --scale web=5`
-> 6. Depois reduza para 1 réplica: `docker compose up -d --scale web=1`
-> 7. **Entrega:** Documente com prints cada etapa e responda:
->    - Qual a diferença entre escalabilidade vertical e horizontal?
->    - O que você acabou de fazer foi escalabilidade vertical ou horizontal? Por quê?
->    - O que aconteceria se um dos containers falhasse com 3 réplicas? E com apenas 1?
+> 2. Suba 3 réplicas: `docker compose up -d --scale web=3`
+> 3. Veja os containers e suas portas: `docker compose ps`
+>    Anote a porta do `web-1` (ex: `32768`) — você vai usar no próximo passo.
+> 4. Abra o **Docker Desktop** → clique em qualquer container → aba **Stats**.
+>    Observe o uso de CPU próximo de 0% com os containers ociosos.
+> 5. Em outro terminal, gere carga (substitua `32768` pela porta anotada):
+>    ```powershell
+>    for ($i = 1; $i -le 500; $i++) { Invoke-WebRequest -Uri http://localhost:32768 -UseBasicParsing | Out-Null }
+>    ```
+>    Observe o CPU% subindo no Docker Desktop ou com `docker stats` no terminal.
+> 6. Aumente para 5 réplicas: `docker compose up -d --scale web=5`
+> 7. Reduza para 1 réplica: `docker compose up -d --scale web=1`
+>    Perceba que os demais containers são encerrados sem interromper o que ficou ativo.
+> 8. **Entrega:** Publique no **GitHub da equipe** um arquivo `.md` ou PDF contendo:
+>    - O **nome completo de todos os integrantes da equipe** no início do documento
+>    - Prints do `docker compose ps` com 3, 5 e 1 réplica
+>    - Print do Docker Desktop (aba Stats) mostrando o CPU durante a geração de carga
+>    - Respostas às perguntas abaixo:
+>      - Qual a diferença entre escalabilidade vertical e horizontal?
+>      - O que você acabou de fazer foi escalabilidade vertical ou horizontal? Por quê?
+>      - O que aconteceria se um dos containers falhasse com 3 réplicas? E com apenas 1?
 
 ---
 
