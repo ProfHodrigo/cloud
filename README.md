@@ -26,10 +26,10 @@ Capacitar os alunos a entender e aplicar soluções baseadas em computação em 
 | Exercício | Atribuído na | Entrega na | Tema |
 |---|---|---|---|
 | Exercício 1 | Aula 01 | Aula 03 | Segurança - Políticas IAM |
-| Exercício 2 | Aula 03 | Aula 05 | Escalabilidade e Alta Disponibilidade |
-| Exercício 3 | Aula 05 | Aula 07 | Armazenamento e Banco de Dados |
-| Exercício 4 | Aula 07 | Aula 09 | Containers e Serverless |
-| Exercício 5 | Aula 09 | Semana 10 (Prova) | Projeto final - Arquitetura em Nuvem |
+| Exercício 2 | Aula 03 | Aula 04 | Escalabilidade e Alta Disponibilidade |
+| Exercício 3 | Aula 04 | Aula 06 | Armazenamento e Banco de Dados |
+| Exercício 4 | Aula 06 | Aula 08 | Containers e Serverless |
+| Exercício 5 | Aula 08 | Semana 9 (Prova) | Projeto final - Arquitetura em Nuvem |
 
 ---
 
@@ -125,19 +125,7 @@ Capacitar os alunos a entender e aplicar soluções baseadas em computação em 
 
 ---
 
-### Aula 04 - Recuperação de Desastres em Nuvem
-
-**Conteúdo:**
-
-- Estratégias de recuperação de desastres (DR) em soluções de nuvem
-- RPO (Recovery Point Objective) e RTO (Recovery Time Objective)
-- Planos de contingência e testes de recuperação
-- Como implementar estratégias de recuperação de desastres em soluções de nuvem
-- Discussão em grupo: "Se o data center da sua empresa pegasse fogo hoje, o que aconteceria?"
-
----
-
-### Aula 05 - Armazenamento e Banco de Dados em Nuvem
+### Aula 04 - Armazenamento e Banco de Dados em Nuvem
 
 **Conteúdo:**
 
@@ -154,7 +142,7 @@ Capacitar os alunos a entender e aplicar soluções baseadas em computação em 
 > **Passo a passo:**
 > 1. Acesse o console da AWS com sua conta Free Tier
 > 2. Vá até o serviço **S3** (Simple Storage Service)
-> 3. Crie um **bucket** com um nome único (ex: `meunome-cloud-aula05`)
+> 3. Crie um **bucket** com um nome único (ex: `meunome-cloud-aula04`)
 > 4. Faça upload de **3 arquivos** diferentes (imagens, PDFs, textos - o que preferir)
 > 5. Crie **2 pastas** dentro do bucket para organizar os arquivos (ex: `documentos/` e `imagens/`)
 > 6. Mova os arquivos para as pastas correspondentes
@@ -168,7 +156,7 @@ Capacitar os alunos a entender e aplicar soluções baseadas em computação em 
 
 ---
 
-### Aula 06 - Implementação de Aplicações em Nuvem
+### Aula 05 - Implementação de Aplicações em Nuvem
 
 **Conteúdo:**
 
@@ -179,7 +167,7 @@ Capacitar os alunos a entender e aplicar soluções baseadas em computação em 
 
 ---
 
-### Aula 07 - Performance e Gerenciamento de APIs em Nuvem
+### Aula 06 - Performance e Gerenciamento de APIs em Nuvem
 
 **Conteúdo:**
 
@@ -215,7 +203,7 @@ Capacitar os alunos a entender e aplicar soluções baseadas em computação em 
 
 ---
 
-### Aula 08 - Custos e Faturamento em Soluções de Nuvem
+### Aula 07 - Custos e Faturamento em Soluções de Nuvem
 
 **Conteúdo:**
 
@@ -228,7 +216,7 @@ Capacitar os alunos a entender e aplicar soluções baseadas em computação em 
 
 ---
 
-### Aula 09 - Tendências Emergentes em Computação em Nuvem
+### Aula 08 - Tendências Emergentes em Computação em Nuvem
 
 **Conteúdo:**
 
@@ -280,11 +268,11 @@ Capacitar os alunos a entender e aplicar soluções baseadas em computação em 
 
 ---
 
-### Semana 10 - Prova Final
+### Semana 9 - Prova Final
 
 **Formato:** Avaliação escrita presencial - 2 horas
 
-- Conteúdo cobrado: Aulas 01 a 09
+- Conteúdo cobrado: Aulas 01 a 08
 - **Entrega do Exercício 5 (Projeto Final)** também realizada nesta semana
 - Não haverá revisão - apenas a aplicação da prova
 
