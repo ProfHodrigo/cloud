@@ -255,7 +255,7 @@ Pense em um **recepcionista de hospital** que direciona pacientes para diferente
 
 ## Exercício 2 - Simulando Escalabilidade com Docker
 
-**Prazo:** 2 semanas (entrega na Aula 05)
+**Prazo:** 2 semanas (entrega na Aula 04)
 
 ### Passo a passo:
 
@@ -347,9 +347,8 @@ Publique no **GitHub da equipe** um arquivo `.md` ou PDF contendo:
 
 ## Próxima Aula
 
-**Aula 04 - Recuperação de Desastres em Nuvem**
+**Aula 04 - Armazenamento e Banco de Dados em Nuvem**
 
-- O que fazer quando tudo dá errado?
-- RPO e RTO
-- Planos de contingência
-- Estratégias de backup e failover
+- Tipos de armazenamento: objetos (S3), blocos (EBS), arquivos (EFS)
+- Bancos de dados relacionais e NoSQL na nuvem
+- Backup e recuperação de dados
