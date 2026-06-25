@@ -139,7 +139,7 @@ Vamos simular o custo de uma aplicação web simples. Acesse [calculator.aws](ht
 **Cenário:** Loja online com tráfego moderado. Adicione os seguintes serviços:
 
 1. **EC2:** 2× t4g.nano, On-Demand, Linux, us-east-1
-2. **RDS:** db.t3.micro, MySQL, 20 GB storage, Single-AZ
+2. **RDS:** db.m1.xlarge, MySQL, 20 GB storage, Single-AZ
 3. **S3:** 50 GB de storage + 100.000 requisições GET/mês
 4. **CloudFront:** 100 GB de dados transferidos/mês
 5. **Elastic Load Balancer:** 1 Application Load Balancer
