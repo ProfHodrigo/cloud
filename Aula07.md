@@ -239,9 +239,11 @@ A empresa abaixo tem uma fatura AWS de **$3.200/mês**. Analise o cenário e ide
 **Prazo:** 2 semanas (entrega na Semana 9 - Prova)
 
 ### Escolha um cenário:
-- **A:** Loja virtual com picos na Black Friday
-- **B:** App de saúde com dados sensíveis de pacientes
-- **C:** Startup com modelo de IA para recomendação de produtos
+> | Cenário | Orçamento mensal máximo |
+> |---|---|
+> | **A** — Loja virtual com picos na Black Friday | R$ 3.000 / mês ($600 US) |
+> | **B** — App de saúde com dados sensíveis | R$ 2.000 / mês ($400 US) |
+> | **C** — Startup de IA com recomendação de produtos | R$ 5.000 / mês ($1.000 US) |
 
 ### Entregas:
 1. **Diagrama** no [Draw.io](https://app.diagrams.net/): compute, storage, segurança, escalabilidade, DR
